@@ -35,10 +35,7 @@ Portfolio Developer Full-stack
 
 ### Autores
 [Enzo Gabriel Pinheiro de Leao](https://www.linkedin.com/in/enzo-le%C3%A3o-976270202/)
-
-[Leonardo da Silva Costa](https://www.linkedin.com/in/enzo-le%C3%A3o-976270202/)
-
-Em busca do próximo nível 🚀 - Never stop learning. 🧑‍🎓
+Em busca do próximo nível 🚀
 
 <h4 align="center"> 
 	👷 : Em construção! 👷 :
