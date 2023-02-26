@@ -57,6 +57,13 @@
             background-color: #293850;
         }
     }
+    .iconSideBarFooter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+    }
 }
 .sideBarContainerVisible{
     left: 0;

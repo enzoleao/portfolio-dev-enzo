@@ -10,7 +10,7 @@ export default function ContatModal() {
       className={
         showContactModal
           ? styles.contactModalContainerShowing
-          : styles.contactModalContaine
+          : styles.contactModalContainer
       }
       onClick={(e) => {
         e.stopPropagation()
@@ -26,14 +26,27 @@ export default function ContatModal() {
           <p>Contact</p>
           <AiOutlineClose
             onClick={() => closeContactModal(false)}
-            color="red"
+            color="#0A192F"
             className={styles.closeModalButton}
           />
         </header>
         <hr />
         <form action="">
-          <input type="text" />
-          <input type="text" />
+          <div>
+            <label htmlFor="name">Name</label>
+            <input id="name" required type="text" />
+          </div>
+          <div>
+            <label htmlFor="email">Email</label>
+            <input id="email" required type="email" />
+          </div>
+          <div>
+            <label htmlFor="message">Message</label>
+            <textarea name="" id="message" required></textarea>
+          </div>
+          <footer>
+            <button type="submit">Enviar</button>
+          </footer>
         </form>
       </main>
     </div>
