@@ -1,0 +1,11 @@
+.aboutContainer {
+    height: 650px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-height:760px){
+        height: 860px;
+    }
+
+}

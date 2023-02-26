@@ -1,0 +1,61 @@
+.contactModalContainer, .contactModalContainerShowing {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(7, 6, 6, 0.548);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 750ms;
+    .mainContactModal {
+        background-color: white;
+        width: 100%;
+        max-width: 450px;
+        height: 450px;
+        border-radius: 10px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            .airPlaneContactUs {
+                height: 32px;
+                width: 32px;
+                transform: rotate(50deg);
+                margin-bottom: 2px;
+            }
+            p {
+                margin-left: 40px;
+                font-weight: 400;
+                font-size: 24px;
+            }
+            .closeModalButton {
+                position: relative;
+                cursor: pointer;
+                height: 24px;
+                width: 24px;
+                left: 240px;
+                bottom: 4px;
+                margin-top: 10px;
+                margin-right: 20px;
+                @media (max-width:330px){
+                    left: 380px;
+                }
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+.contactModalContainerShowing {
+    opacity: 1;
+    display: flex;
+}

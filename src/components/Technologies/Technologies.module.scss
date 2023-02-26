@@ -1,0 +1,7 @@
+.technologiesContainer {
+    height: 800px;
+
+    @media (min-height:760px){
+        height: 860px;
+    }
+}

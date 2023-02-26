@@ -38,7 +38,7 @@
   --blue-1100: #101134;
 
   /* --- FONT FAMILY --- */
-  --fontFamily: 'Rubik', sans-serif;
+  --fontFamily: 'Roboto', sans-serif;
 }
 
 /* tamanho de iped */
@@ -56,7 +56,7 @@
 }
 
 body {
-  background: var(--blue-300);
+  background: #0b2949;
   color: var(--secondary);
   -webkit-font-smoothing: antialiased;
 }
@@ -64,7 +64,7 @@ body {
 * body,
 html {
   min-width: 420px;
-  background: var(--blue-300);
+  background: #0b2949;
 }
 
 body,

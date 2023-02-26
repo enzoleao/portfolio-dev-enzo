@@ -21,14 +21,19 @@ Portfolio Developer Full-stack
 ### Features
 
 <h5>Páginas</h5>
+[x] - Home
 
 <h5>Componentes</h5>
-
+[x] - Sidebar
+[x] - Header
+[x] - contactModal
 ### 🛠 Tecnologias
 
 - [Next.js](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [react-scroll](https://yarnpkg.com/package/react-scroll)
 - [VSCode](https://code.visualstudio.com/)
 
 ---
