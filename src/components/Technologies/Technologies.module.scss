@@ -1,7 +1,35 @@
 .technologiesContainer {
     height: 800px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media (min-height:760px){
         height: 860px;
+    }
+    span {
+        width: 100%;
+        max-width: 730px;
+        display: flex;
+        gap: 30px;
+        background-color: #d1d1d19d;
+        justify-content: center;
+        padding: 40px;
+        border-radius: 25px;
+
+        .technologiesIcons{
+            height: 80px;
+            width: 80px;
+            color:#0A192F
+        } 
+        @media(max-width: 768px){
+           width: 80%;
+           padding: 20px;
+           gap: 15px;
+           .technologiesIcons{
+            height: 80px;
+            width: 80px;
+            color:#f0efef;
+        } 
+        }
     }
 }

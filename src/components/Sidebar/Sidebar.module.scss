@@ -1,7 +1,7 @@
 .sideBarContainer, .sideBarContainerVisible {
     height: 100%;
     background-color: #0A192F;
-    z-index: 1;
+    z-index: 5;
     top: 0;
     left: -100%;
     opacity: 0;
@@ -34,10 +34,13 @@
         height: 100%;
         .liDefault, .liActive {
             width: 100%;
+            position: relative;
+            left: -120%;
             border-left: 1px solid #0A192F;
             height: 40px;
             display: flex;
             align-items: center;
+            transition: 640ms;
             &:hover {
                 border-left: 1px solid #f0efef;
                 background-color: #293850;
@@ -68,4 +71,10 @@
 .sideBarContainerVisible{
     left: 0;
     opacity: 1;
+    ul {
+
+        .liDefault, .liActive {
+            left: 0%;
+        }
+    }
 }
