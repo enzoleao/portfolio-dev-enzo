@@ -6,7 +6,6 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
 export default function ContatModal() {
-  console.log(`${process.env.YOUR_PUBLIC_KEY}`)
   const { showContactModal, closeContactModal } = useContextProvider()
   const form = useRef<HTMLFormElement | any>()
   const sendEmail = (e: any) => {
