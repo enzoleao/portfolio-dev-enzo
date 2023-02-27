@@ -6,16 +6,17 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
 export default function ContatModal() {
+  console.log(`${process.env.YOUR_PUBLIC_KEY}`)
   const { showContactModal, closeContactModal } = useContextProvider()
   const form = useRef<HTMLFormElement | any>()
   const sendEmail = (e: any) => {
     e.preventDefault()
     emailjs
       .sendForm(
-        'service_sir7zfa',
-        'template_5rhjupf',
+        `${process.env.YOUR_SERVICE_ID}`,
+        `${process.env.YOUR_TEMPLATE_ID}`,
         form.current,
-        'ImM2SjfD52TQIApvw',
+        `${process.env.YOUR_PUBLIC_KEY}`,
       )
       .then(
         (result: any) => {

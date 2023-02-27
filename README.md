@@ -26,7 +26,10 @@ Portfolio Developer Full-stack
 <h5>Componentes</h5>
 [x] - Sidebar
 [x] - Header
-[x] - contactModal
+[x] - About
+[x] - ContactModal
+[x] - Projects
+[x] - Technologies
 ### 🛠 Tecnologias
 
 - [Next.js](https://nextjs.org/)
@@ -34,6 +37,8 @@ Portfolio Developer Full-stack
 - [Sass](https://sass-lang.com/)
 - [react-icons](https://react-icons.github.io/react-icons/)
 - [react-scroll](https://yarnpkg.com/package/react-scroll)
+- [emailjs](https://www.emailjs.com/)
+- [muireact](https://mui.com/)
 - [VSCode](https://code.visualstudio.com/)
 
 ---
