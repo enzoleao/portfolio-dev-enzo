@@ -4,11 +4,16 @@ export default function About() {
     <div className={styles.aboutContainer} id="section1">
       <div>
         <div>
-          <p className={styles.namePortfolio}>Hi, Im Enzo, a Web Developer</p>
+          <span className={styles.namePortfolio}>
+            <p>Hi, Im Enzo, a</p>
+            <p className={styles.webDeveloper}>Web Developer</p>
+          </span>
+          <p className={styles.experiencesTextLeft}>
+            I have experience with projects using React and Next in the
+            Front-End and Node & Express for the Back-End
+          </p>
         </div>
-        <div>
-          <p>ola</p>
-        </div>
+        <div></div>
       </div>
       <div></div>
     </div>

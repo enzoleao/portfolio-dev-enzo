@@ -10,6 +10,7 @@
     transition: 750ms;
     display: none;
     z-index:6;
+
     .mainContactModal {
         background-color: white;
         width: 100%;
@@ -44,7 +45,7 @@
                 bottom: 4px;
                 margin-top: 10px;
                 margin-right: 20px;
-                @media (max-width:375px){
+                @media (max-width:675px){
                     left: 175px;
                 }
             }
@@ -106,7 +107,7 @@
                 }
             }
         }
-        @media (max-width:375px){
+        @media (max-width:675px){
             max-width: 375px;
         }
     }

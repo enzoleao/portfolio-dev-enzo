@@ -15,13 +15,34 @@
         div {
             display: flex;
             flex-direction: column;
+            gap: 5px;
+
             .namePortfolio {
+                display: flex;
+                gap: 6px;
                 font-weight: 600;
                 font-size: 44px;
                 bottom: 200px;
                 right: 300px;
                 text-align: center;
+                @media (max-width:768px){
+                    flex-direction: column;
+                }
+                .webDeveloper{
+                    color: #98c3ed;
+                }
             }
+            .experiencesTextLeft {
+                font-size: 18px;
+                font-weight: 400;
+
+                @media (max-width:768px){
+                    text-align: center;
+                }
+            }
+        }
+        @media (max-width:768px){
+            flex-direction: column;
         }
     }
     @media (min-height:760px){

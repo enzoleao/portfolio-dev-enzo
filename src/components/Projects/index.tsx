@@ -8,15 +8,31 @@ export default function Projects() {
     <div className={styles.projectsContainer} id="section2">
       <div className={styles.projectSections}>
         <Image src={agendamentoPmpa} alt="image-agendamentopmpa" />
-        <p>SISTEMA DE AGENDAMENTO PMPA</p>
+        <p>
+          Neste projeto foi realizado o desenvolvimento de um sistema de
+          agendamento para uma Subseção da PMPA para retirada de funcional
+        </p>
+        <a href="https://agendamentopmpa.com.br/">
+          SISTEMA DE AGENDAMENTO PMPA
+        </a>
       </div>
       <div className={styles.projectSections}>
         <Image src={prontuarioCiap} alt="image-agendamentopmpa" />
-        <p>SISTEMA DE PRONTUARIO CIAP</p>
+        <p>
+          Este projeto vem sendo desenvolvido para o uso dos militares da que
+          atuam no CIAP PMPA, para o gerenciamento de prontuários
+        </p>
+        <a href="https://ciap-front-end-project.vercel.app/">
+          SISTEMA DE PRONTUARIO CIAP
+        </a>
       </div>
       <div className={styles.projectSections}>
         <Image src={prototipoDashboard} alt="image-agendamentopmpa" />
-        <p>PROTOTIPO DE DASHBOARD</p>
+        <p>
+          Neste projeto foi realizado o desenvolvimento para testes de
+          responsividade e bibliotecas de gráficos
+        </p>
+        <a href="https://templatefinal.vercel.app/">PROTOTIPO DE DASHBOARD</a>
       </div>
     </div>
   )

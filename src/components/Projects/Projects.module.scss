@@ -3,31 +3,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
     .projectSections {
         width: 100%;
         max-width: 340px;
-        height: 240px;
-        background-color: #d1d1d19d;;
+        height: 260px;
+        background-color: #d1d1d19d;
         display: flex;
         align-items: flex-end;
         justify-content: center;
+        flex-direction: column;
         border-radius: 25px;
         transition: 350ms;
+        color: #0A192F;
         cursor: pointer;
-        
         p {
             position: absolute;
+            text-align: center;
+            max-width: inherit;
             font-weight: 600;
+            
+        }
+        a {
+            padding-top: 10px;
+            display: flex;
+            justify-content: center;
+            font-weight: 600;
+            text-align: center;
+            width: 100%;
+            height: 20%;
+            border-radius: 0px 0px 25px 25px;
+            &:hover {
+                color: #f0efef;
+                background-color: #0A192F;
+            }
         }
         img {
             width: 100%;
-            height: 100%;
+            height: 80%;
             border-radius: 25px;
             transition: 350ms;
             z-index: 1;
             &:hover{
-                transform: translateY(-92px);
+                transform: translateY(-100px);
             }
         }
         }
