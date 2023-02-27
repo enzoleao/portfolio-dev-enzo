@@ -107,6 +107,10 @@
                     }
                 }
             }
+            .loadingAndErrorIcon {
+                width: 50px;
+                height: 50px;
+            }
         }
         @media (max-width:675px){
             max-width: 375px;

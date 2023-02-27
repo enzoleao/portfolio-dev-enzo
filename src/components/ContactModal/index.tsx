@@ -1,15 +1,19 @@
+import emailjs from '@emailjs/browser'
 import { useContextProvider } from '@/src/Context/useContext'
 import styles from './ContactModal.module.scss'
 import { AiOutlineClose } from 'react-icons/ai'
 import { HiOutlinePaperAirplane } from 'react-icons/hi'
-import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
-
+import { useRef, useState } from 'react'
+import CircularProgress from '@mui/material/CircularProgress'
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
 export default function ContatModal() {
   const { showContactModal, closeContactModal } = useContextProvider()
+  const [loading, setLoading] = useState('default')
   const form = useRef<HTMLFormElement | any>()
   const sendEmail = (e: any) => {
     e.preventDefault()
+    setLoading('loading')
     emailjs
       .sendForm(
         `${process.env.YOUR_SERVICE_ID}`,
@@ -19,10 +23,14 @@ export default function ContatModal() {
       )
       .then(
         (result: any) => {
-          console.log(result.text)
+          setLoading('success')
+          setTimeout(() => {
+            setLoading('default')
+            closeContactModal(false)
+          }, 3000)
         },
-        (error: any) => {
-          console.log(error.text)
+        () => {
+          setLoading('error')
         },
       )
   }
@@ -66,7 +74,26 @@ export default function ContatModal() {
             <textarea id="message" name="message" required></textarea>
           </div>
           <footer>
-            <button type="submit">Enviar</button>
+            {(() => {
+              switch (loading) {
+                case 'default':
+                  return <button type="submit">Enviar</button>
+                case 'loading':
+                  return <CircularProgress color="inherit" />
+                case 'success':
+                  return (
+                    <CheckCircleOutlineIcon
+                      className={styles.loadingAndErrorIcon}
+                    />
+                  )
+                case 'error':
+                  return (
+                    <ErrorOutlineIcon className={styles.loadingAndErrorIcon} />
+                  )
+                default:
+                  return null
+              }
+            })()}
           </footer>
         </form>
       </main>
