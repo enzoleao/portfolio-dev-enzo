@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 
 type UseContextType = {
   headerSelectedOptions: string
@@ -16,6 +16,7 @@ export function ContextProvider({ children }: any) {
   const [headerSelectedOptions, setHeaderSelectedOptions] = useState('ABOUT')
   const [showSidebar, setShowSideBar] = useState(false)
   const [showContactModal, setShowContactModal] = useState(false)
+
   const setShowScroll = (data: string) => {
     setHeaderSelectedOptions(data)
   }

@@ -2,9 +2,30 @@ import { useContextProvider } from '@/src/Context/useContext'
 import styles from './ContactModal.module.scss'
 import { AiOutlineClose } from 'react-icons/ai'
 import { HiOutlinePaperAirplane } from 'react-icons/hi'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+
 export default function ContatModal() {
   const { showContactModal, closeContactModal } = useContextProvider()
-
+  const form = useRef<HTMLFormElement | any>()
+  const sendEmail = (e: any) => {
+    e.preventDefault()
+    emailjs
+      .sendForm(
+        'service_sir7zfa',
+        'template_5rhjupf',
+        form.current,
+        'ImM2SjfD52TQIApvw',
+      )
+      .then(
+        (result: any) => {
+          console.log(result.text)
+        },
+        (error: any) => {
+          console.log(error.text)
+        },
+      )
+  }
   return (
     <div
       className={
@@ -31,18 +52,18 @@ export default function ContatModal() {
           />
         </header>
         <hr />
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <div>
             <label htmlFor="name">Name</label>
-            <input id="name" required type="text" />
+            <input id="name" required type="text" name="user_name" />
           </div>
           <div>
             <label htmlFor="email">Email</label>
-            <input id="email" required type="email" />
+            <input id="email" required type="email" name="user_email" />
           </div>
           <div>
             <label htmlFor="message">Message</label>
-            <textarea name="" id="message" required></textarea>
+            <textarea id="message" name="message" required></textarea>
           </div>
           <footer>
             <button type="submit">Enviar</button>
