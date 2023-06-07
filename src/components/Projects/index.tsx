@@ -1,6 +1,7 @@
 import styles from './Projects.module.scss'
 import Image from 'next/image'
 import AgendamentoImage from '../../../public/images/agendamento_pmpa.png'
+import ciapImage from '../../../public/images/ciap_pmpa.png'
 import { Timeline } from 'antd'
 import { useEffect, useState } from 'react'
 export default function Projects() {
@@ -37,7 +38,12 @@ export default function Projects() {
               children: (
                 <>
                   <div className="flex w-full">
-                    <Image height={250} src={AgendamentoImage} alt="teste" />
+                    <Image
+                      width={350}
+                      height={250}
+                      src={AgendamentoImage}
+                      alt="teste"
+                    />
                   </div>
                 </>
               ),
@@ -57,12 +63,7 @@ export default function Projects() {
               className: styles.timelineItem,
               children: (
                 <>
-                  <Image
-                    ///  style={{ marginLeft: '-174px' }}
-                    height={250}
-                    src={AgendamentoImage}
-                    alt="teste"
-                  />
+                  <Image width={350} height={250} src={ciapImage} alt="teste" />
                 </>
               ),
               label: (
