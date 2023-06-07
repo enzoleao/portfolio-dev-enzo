@@ -31,7 +31,7 @@ export default function Technologies() {
           speed={1000}
           modules={[Autoplay, FreeMode]}
           freeMode={true}
-          className="w-full h-full"
+          style={{ width: '80%' }}
         >
           <SwiperSlide className={styles.swiperSlide}>
             <SiReact className={styles.technologiesIcons} />

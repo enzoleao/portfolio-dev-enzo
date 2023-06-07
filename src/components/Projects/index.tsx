@@ -1,8 +1,8 @@
-import { Timeline } from 'antd'
 import styles from './Projects.module.scss'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
 import AgendamentoImage from '../../../public/images/agendamento_pmpa.png'
+import { Timeline } from 'antd'
+import { useEffect, useState } from 'react'
 export default function Projects() {
   const [showItems, setShowItems] = useState(false)
 
