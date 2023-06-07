@@ -64,6 +64,15 @@
            
         }
     }
+    .projectsImages {
+        width: 350px;
+        height: 250px;
+        
+        @media (max-width: 738px) {
+            width: 250px;
+            height: 150px;
+        }
+    }
 }
 
 .timeline {

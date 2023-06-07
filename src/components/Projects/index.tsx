@@ -39,10 +39,9 @@ export default function Projects() {
                 <>
                   <div className="flex w-full">
                     <Image
-                      width={350}
-                      height={250}
                       src={AgendamentoImage}
                       alt="teste"
+                      className={styles.projectsImages}
                     />
                   </div>
                 </>
@@ -63,7 +62,11 @@ export default function Projects() {
               className: styles.timelineItem,
               children: (
                 <>
-                  <Image width={350} height={250} src={ciapImage} alt="teste" />
+                  <Image
+                    className={styles.projectsImages}
+                    src={ciapImage}
+                    alt="teste"
+                  />
                 </>
               ),
               label: (
