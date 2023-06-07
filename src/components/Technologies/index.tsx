@@ -1,18 +1,78 @@
 import styles from './Technologies.module.scss'
-import { FaNodeJs, FaSass, FaReact, FaCss3Alt } from 'react-icons/fa'
-import { SiTailwindcss, SiTypescript, SiJavascript } from 'react-icons/si'
+import {
+  SiTailwindcss,
+  SiTypescript,
+  SiMysql,
+  SiPostgresql,
+  SiPrisma,
+  SiNextdotjs,
+  SiLaravel,
+  SiExpress,
+  SiSequelize,
+  SiReact,
+  SiSass,
+  SiNodedotjs,
+  SiGit,
+} from 'react-icons/si'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, FreeMode } from 'swiper'
+import 'swiper/css'
 
 export default function Technologies() {
   return (
     <div id="section3" className={styles.technologiesContainer}>
       <span>
-        <SiJavascript className={styles.technologiesIcons} />
-        <SiTypescript className={styles.technologiesIcons} />
-        <FaNodeJs className={styles.technologiesIcons} />
-        <FaReact className={styles.technologiesIcons} />
-        <FaCss3Alt className={styles.technologiesIcons} />
-        <FaSass className={styles.technologiesIcons} />
-        <SiTailwindcss className={styles.technologiesIcons} />
+        <Swiper
+          slidesPerView={5}
+          autoplay={{
+            delay: 20,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+          modules={[Autoplay, FreeMode]}
+          freeMode={true}
+          className="w-full h-full"
+        >
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiReact className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiNextdotjs className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiTypescript className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiSass className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiTailwindcss className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiNodedotjs className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiExpress className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiLaravel className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiMysql className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiPostgresql className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiPrisma className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiSequelize className={styles.technologiesIcons} />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+            <SiGit className={styles.technologiesIcons} />
+          </SwiperSlide>
+        </Swiper>
       </span>
     </div>
   )
