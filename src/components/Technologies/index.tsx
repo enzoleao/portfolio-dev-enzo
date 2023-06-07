@@ -32,6 +32,7 @@ export default function Technologies() {
           modules={[Autoplay, FreeMode]}
           freeMode={true}
           style={{ width: '80%' }}
+          spaceBetween={50}
         >
           <SwiperSlide className={styles.swiperSlide}>
             <SiReact className={styles.technologiesIcons} />
