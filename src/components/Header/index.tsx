@@ -18,11 +18,7 @@ export default function Header() {
   const handleChange = (value: string) => {
     console.log(`selected ${value}`)
   }
-  const selectStyle = {
-    backgroundColor: 'transparent',
-    color: 'white', // Cor do texto dentro do select
-    border: 'none', // Removendo a borda
-  }
+
   return (
     <div className={styles.headerContainer}>
       <RxHamburgerMenu
