@@ -43,9 +43,10 @@
             padding: 0 30px;
             border-radius: 2px;
             cursor:pointer;
-
+            transition: all 0.4s;
             &:hover {
                 background-color: #293850;
+                border-bottom: 1px solid;
             }
             a {
                 height: 100%;
@@ -64,4 +65,7 @@
         }
     }
 
+}
+.selectLanguage {
+    background-color: none;
 }

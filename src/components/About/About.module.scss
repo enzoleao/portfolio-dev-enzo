@@ -1,5 +1,5 @@
 .aboutContainer {
-    height: 850px;
+    height: 1000px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -45,8 +45,6 @@
             flex-direction: column;
         }
     }
-    @media (min-height:760px){
-        height: 860px;
-    }
+    
 
 }

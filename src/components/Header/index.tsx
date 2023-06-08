@@ -3,6 +3,7 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 import { FaConnectdevelop } from 'react-icons/fa'
 import { useContextProvider } from '@/src/Context/useContext'
 import { RxHamburgerMenu } from 'react-icons/rx'
+import { Select, Space } from 'antd'
 export default function Header() {
   const {
     headerSelectedOptions,
@@ -13,6 +14,14 @@ export default function Header() {
 
   const scrollToTop = () => {
     scroll.scrollToTop()
+  }
+  const handleChange = (value: string) => {
+    console.log(`selected ${value}`)
+  }
+  const selectStyle = {
+    backgroundColor: 'transparent',
+    color: 'white', // Cor do texto dentro do select
+    border: 'none', // Removendo a borda
   }
   return (
     <div className={styles.headerContainer}>
@@ -33,7 +42,6 @@ export default function Header() {
             to="section1"
             spy={true}
             smooth={true}
-            offset={-70}
             duration={500}
             onClick={() => setShowScroll('ABOUT')}
           >
@@ -52,7 +60,6 @@ export default function Header() {
             to="section2"
             spy={true}
             smooth={true}
-            offset={-70}
             duration={500}
           >
             PROJECTS
@@ -72,7 +79,6 @@ export default function Header() {
             to="section3"
             spy={true}
             smooth={true}
-            offset={-70}
             duration={500}
             height={100}
           >
@@ -82,6 +88,18 @@ export default function Header() {
         <li className={styles.li} onClick={showContactModalViewer}>
           CONTACT
         </li>
+        <Space wrap>
+          <Select
+            className={styles.selectLanguage}
+            defaultValue="PT-BR"
+            style={{ width: 120, position: 'absolute', marginLeft: '50px' }}
+            onChange={handleChange}
+            options={[
+              { value: 'PT-BR', label: 'PT-BR' },
+              { value: 'EN-US', label: 'EN-US' },
+            ]}
+          />
+        </Space>
       </ul>
     </div>
   )

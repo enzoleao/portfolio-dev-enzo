@@ -1,48 +1,53 @@
 .technologiesContainer {
-    height: 800px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (min-height:760px){
-        height: 800px;
-    }
+
     span {
         width: 100%;
         display: flex;
         padding: 20px; 
-          
+        margin-bottom: 150px;
         .technologiesIcons{
             height: 80px;
             width: 80px;
             color:#fff;
         } 
-        @media(max-width: 768px){
-           width: 100%;
-           padding: 20px;
-           gap: 15px;
-           .technologiesIcons{
-            height: 80px;
-            width: 80px;
-            color:#fff;
-        } 
-        }
+       
     }
 }
-.swiper {
+.swiperWrapper {
     width: 100%;
-    height: 100%;
-    color: white;
-  }
-  
-  .swiperSlide {
-    height: 100%;
-    text-align: center;
-    font-size: 18px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: white;
-  }
+
+    .swiperSlide {
+      display: flex;
+      padding: 0 1rem;
+      align-items: center;
+      max-width: 150px;
+      width: 100%;
+        .technologiesIcons {
+            object-fit: contain;
+        }
+      .imageSlide {
+        object-fit: contain;
+      }
+
+      @media only screen and (max-width: 800px) {
+        max-width: 100px;
+        .imageSlide {
+          max-width: 35px;
+        }
+        img {
+          max-width: 50px;
+        }
+      }
+    }
+}
+
   
 
+  
   
