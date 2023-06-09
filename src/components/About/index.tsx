@@ -5,11 +5,15 @@ import { useContextProvider } from '@/src/Context/useContext'
 import { motion } from 'framer-motion'
 const fadeIn = {
   initial: { opacity: 0 },
-  animate: { opacity: 1 },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 3,
+    },
+  },
 }
 export default function About() {
   const { setShowScroll } = useContextProvider()
-
   useEffect(() => {
     const handleScroll = async () => {
       const timeline = document.getElementById('section1')
