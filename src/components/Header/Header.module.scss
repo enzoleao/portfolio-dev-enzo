@@ -64,8 +64,7 @@
             display: none;
         }
     }
-
-}
-.selectLanguage {
-    background-color: none;
+    @media (max-width: 425px ){
+        height: 90px;
+    }
 }

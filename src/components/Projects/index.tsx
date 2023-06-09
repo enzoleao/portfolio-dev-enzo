@@ -5,6 +5,7 @@ import ciapImage from '../../../public/images/ciap_pmpa.png'
 import { Timeline } from 'antd'
 import { useEffect, useState } from 'react'
 import { useContextProvider } from '@/src/Context/useContext'
+import Link from 'next/link'
 export default function Projects() {
   const [showItems, setShowItems] = useState(false)
   const { setShowScroll } = useContextProvider()
@@ -52,8 +53,12 @@ export default function Projects() {
                 </>
               ),
               label: (
-                <>
-                  <h3>SISTEMA DE AGENDAMENTO DA SIPM</h3>
+                <div>
+                  <h3>
+                    <Link href="https://agendamentopmpa.com.br">
+                      SISTEMA DE AGENDAMENTO DA SIPM
+                    </Link>
+                  </h3>
                   <h4>01/07/2022 - 01/03/2023</h4>
                   <span className="text-justify">
                     Lorem Ipsum is simply dummy text of the printing and
@@ -61,7 +66,7 @@ export default function Projects() {
                     standard dummy text ever since the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a
                   </span>
-                </>
+                </div>
               ),
             },
             {
@@ -77,7 +82,11 @@ export default function Projects() {
               ),
               label: (
                 <>
-                  <h3>SISTEMA DE GESTÃO DE PRONTUÁRIO DO CIAP</h3>
+                  <h3>
+                    <Link href="https://ciap-front-end-project.vercel.app">
+                      SISTEMA DE GESTÃO DE PRONTUÁRIO DO CIAP
+                    </Link>
+                  </h3>
                   <h4>01/07/2022 - 01/03/2023</h4>
                   <span className=" text-justify">
                     Lorem Ipsum is simply dummy text of the printing and
