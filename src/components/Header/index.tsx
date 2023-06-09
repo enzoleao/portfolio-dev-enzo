@@ -3,7 +3,7 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 import { FaConnectdevelop } from 'react-icons/fa'
 import { useContextProvider } from '@/src/Context/useContext'
 import { RxHamburgerMenu } from 'react-icons/rx'
-import { Select, Space } from 'antd'
+
 export default function Header() {
   const {
     headerSelectedOptions,
@@ -14,9 +14,6 @@ export default function Header() {
 
   const scrollToTop = () => {
     scroll.scrollToTop()
-  }
-  const handleChange = (value: string) => {
-    console.log(`selected ${value}`)
   }
 
   return (
@@ -84,18 +81,6 @@ export default function Header() {
         <li className={styles.li} onClick={showContactModalViewer}>
           CONTACT
         </li>
-        <Space wrap>
-          <Select
-            className={styles.selectLanguage}
-            defaultValue="PT-BR"
-            style={{ width: 120, position: 'absolute', marginLeft: '50px' }}
-            onChange={handleChange}
-            options={[
-              { value: 'PT-BR', label: 'PT-BR' },
-              { value: 'EN-US', label: 'EN-US' },
-            ]}
-          />
-        </Space>
       </ul>
     </div>
   )

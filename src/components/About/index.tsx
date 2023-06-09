@@ -1,9 +1,15 @@
-import { useEffect } from 'react'
 import styles from './About.module.scss'
 import Typed from 'react-typed'
+import { useEffect } from 'react'
 import { useContextProvider } from '@/src/Context/useContext'
+import { motion } from 'framer-motion'
+const fadeIn = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+}
 export default function About() {
   const { setShowScroll } = useContextProvider()
+
   useEffect(() => {
     const handleScroll = async () => {
       const timeline = document.getElementById('section1')
@@ -18,6 +24,7 @@ export default function About() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [setShowScroll])
+
   return (
     <div className={styles.aboutContainer} id="section1">
       <div id="about">
@@ -39,7 +46,6 @@ export default function About() {
               />
             </p>
           </span>
-
           <p className={styles.experiencesTextLeft}>
             <Typed
               strings={[
@@ -51,9 +57,17 @@ export default function About() {
             />
           </p>
         </div>
-        <div></div>
       </div>
-      <div></div>
+      <div>
+        <motion.img
+          src="https://github.com/enzoleao.png"
+          alt="Imagem"
+          initial="initial"
+          animate="animate"
+          variants={fadeIn}
+          className={styles.meImage}
+        />
+      </div>
     </div>
   )
 }
