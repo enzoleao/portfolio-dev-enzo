@@ -13,6 +13,7 @@
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.42);
     display: flex;
     transition: 350ms;
+
     .sideBarCloseButton {
         position: absolute;
         cursor: pointer;
@@ -40,7 +41,7 @@
             width: 100%;
             position: relative; 
             border-left: 1px solid #0A192F;
-            height: 40px;
+            height: 60px;
             display: flex;
             align-items: center;
             transition: 640ms;
@@ -75,8 +76,9 @@
 .sideBarContainerVisible{
     left: 0;
     opacity: 1;
-    height: 280px;
+    height: 360px;
     visibility: inherit;
+
     ul {
         display: flex;
         visibility: inherit;
