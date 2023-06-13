@@ -1,10 +1,22 @@
 {
-    "apresentation": "Hi Im Enzo",
-    "profession": "A Web Developer",
-    "contact": "Contact !!!",
-    "header-about":"ABOUT",
-    "header-projects":"PROJECTS",
-    "header-technologies":"TECHNOLOGIES",
-    "header-contact": "CONTACT",
-    "projects-scheduling-label":"SIPM SCHEDULING"
+    "about": {
+      "apresentation": "Hi Im Enzo",
+      "profession": "A Web Developer"
+    },
+    "header":{
+      "about":"ABOUT",
+      "projects":"PROJECTS",
+      "technologies":"TECHNOLOGIES",
+      "contact":"CONTACT"
+    },
+    "projects": {
+        "scheduling": {
+          "name": "SIPM SCHEDULING",
+          "about":""
+        },
+        "medicalReportManagment": {
+          "name":"MEDICAL REPORT MANAGEMENT - CIAP",
+          "about":""
+        }
+    }
   }

@@ -50,7 +50,7 @@ export default function Header() {
             duration={500}
             onClick={() => setShowScroll('ABOUT')}
           >
-            {t('header-about')}
+            {t('header.about')}
           </Link>
         </li>
         <li
@@ -67,7 +67,7 @@ export default function Header() {
             smooth={true}
             duration={500}
           >
-            {t('header-projects')}
+            {t('header.projects')}
           </Link>
         </li>
         <li
@@ -87,11 +87,11 @@ export default function Header() {
             duration={500}
             height={100}
           >
-            {t('header-technologies')}
+            {t('header.technologies')}
           </Link>
         </li>
         <li className={styles.li} onClick={showContactModalViewer}>
-          {t('header-contact')}
+          {t('header.contact')}
         </li>
         <li className={styles.coutriesLi}>
           <Image

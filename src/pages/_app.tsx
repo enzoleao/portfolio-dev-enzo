@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import { ContextProvider } from '../Context/useContext'
 import { appWithTranslation } from 'next-i18next'
 import i18n from '../../i18n'
+import Head from 'next/head'
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
@@ -17,6 +18,10 @@ function App({ Component, pageProps }: AppProps) {
   }, [lang])
   return (
     <ContextProvider>
+      <Head>
+        <title>Developer</title>
+        <link rel="icon" href="/images/favicon.png" />
+      </Head>
       <Component {...pageProps} />
     </ContextProvider>
   )

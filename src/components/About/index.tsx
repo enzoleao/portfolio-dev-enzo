@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { useContextProvider } from '@/src/Context/useContext'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
+
 const fadeIn = {
   initial: { opacity: 0 },
   animate: {
@@ -38,7 +39,7 @@ export default function About() {
             <p>
               <Typed
                 showCursor={false}
-                strings={[t('apresentation')]}
+                strings={[t('about.apresentation')]}
                 startDelay={60}
                 typeSpeed={40}
               />
@@ -46,7 +47,7 @@ export default function About() {
             <p className={styles.webDeveloper}>
               <Typed
                 showCursor={false}
-                strings={[t('profession')]}
+                strings={[t('about.profession')]}
                 typeSpeed={40}
                 startDelay={1300}
               />
@@ -54,7 +55,7 @@ export default function About() {
           </span>
           <p className={styles.experiencesTextLeft}>
             <Typed
-              strings={['experience']}
+              strings={[t('about.experience')]}
               startDelay={2500}
               showCursor={false}
               typeSpeed={40}

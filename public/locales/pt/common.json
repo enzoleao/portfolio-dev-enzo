@@ -1,10 +1,23 @@
 {
-    "apresentation": "Olá, me chamo Enzo, sou",
-    "profession": "Desenvolver Web",
-    "contact": "Contato",
-    "header-about":"SOBRE",
-    "header-projects":"PROJETOS",
-    "header-technologies":"TECNOLOGIAS",
-    "header-contact": "CONTATO",
-    "projects-scheduling-label":"AGENDAMENTO SIPM"
+    "about": {
+      "apresentation": "Olá, me chamo Enzo, sou",
+      "profession": "Desenvolver Web",
+      "experience": ""
+    },
+    "header":{
+      "about":"SOBRE",
+      "projects":"PROJETOS",
+      "technologies":"TECNOLÓGIAS",
+      "contact":"CONTATO"
+    },
+    "projects": {
+      "scheduling": {
+        "name": "AGENDAMENTO SIPM",
+        "about":""
+      },
+      "medicalReportManagment": {
+        "name":"GESTÃO DE PRONTUÁRIO - CIAP",
+        "about":""
+      }
+    }
   }

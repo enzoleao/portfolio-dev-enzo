@@ -59,7 +59,7 @@ export default function Projects() {
                 <div>
                   <h3>
                     <Link href="https://agendamentopmpa.com.br">
-                      {t('projects-scheduling-label')}
+                      {t('projects.scheduling.name')}
                     </Link>
                   </h3>
                   <h4>01/07/2022 - 01/03/2023</h4>
@@ -90,10 +90,10 @@ export default function Projects() {
                 <>
                   <h3>
                     <Link href="https://ciap-front-end-project.vercel.app">
-                      medicalReportManagement
+                      {t('projects.medicalReportManagment.name')}
                     </Link>
                   </h3>
-                  <h4>01/07/2022 - Now</h4>
+                  <h4>01/03/2023 - Now</h4>
                   <span className={styles.labelStyleRight}>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and
