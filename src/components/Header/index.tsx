@@ -6,6 +6,8 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 import { FaConnectdevelop } from 'react-icons/fa'
 import { useContextProvider } from '@/src/Context/useContext'
 import { RxHamburgerMenu } from 'react-icons/rx'
+import { useRouter } from 'next/router'
+import { useTranslation } from 'react-i18next'
 
 export default function Header() {
   const {
@@ -17,6 +19,13 @@ export default function Header() {
 
   const scrollToTop = () => {
     scroll.scrollToTop()
+  }
+
+  const { i18n, t } = useTranslation()
+  const router = useRouter()
+  const handleChangeLanguage = async (value: any) => {
+    i18n.changeLanguage(value)
+    router.push(`/?lang=${value}`)
   }
 
   return (
@@ -41,7 +50,7 @@ export default function Header() {
             duration={500}
             onClick={() => setShowScroll('ABOUT')}
           >
-            ABOUT
+            {t('header-about')}
           </Link>
         </li>
         <li
@@ -58,7 +67,7 @@ export default function Header() {
             smooth={true}
             duration={500}
           >
-            PROJECTS
+            {t('header-projects')}
           </Link>
         </li>
         <li
@@ -78,22 +87,22 @@ export default function Header() {
             duration={500}
             height={100}
           >
-            TECHNOLOGIES
+            {t('header-technologies')}
           </Link>
         </li>
         <li className={styles.li} onClick={showContactModalViewer}>
-          CONTACT
+          {t('header-contact')}
         </li>
         <li className={styles.coutriesLi}>
           <Image
-            onClick={() => console.log('brasil')}
+            onClick={() => handleChangeLanguage('pt')}
             width={15}
             height={15}
             alt="BRASIL"
             src={BrasilImg}
           />
           <Image
-            onClick={() => console.log('USA')}
+            onClick={() => handleChangeLanguage('en')}
             width={15}
             height={15}
             alt="USA"

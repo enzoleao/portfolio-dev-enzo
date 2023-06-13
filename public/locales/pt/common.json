@@ -1,5 +1,10 @@
 {
-    "home": "Início",
-    "about": "Sobre",
-    "contact": "Contato"
+    "apresentation": "Olá, me chamo Enzo, sou",
+    "profession": "Desenvolver Web",
+    "contact": "Contato",
+    "header-about":"SOBRE",
+    "header-projects":"PROJETOS",
+    "header-technologies":"TECNOLOGIAS",
+    "header-contact": "CONTATO",
+    "projects-scheduling-label":"AGENDAMENTO SIPM"
   }

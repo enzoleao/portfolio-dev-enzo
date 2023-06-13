@@ -6,10 +6,11 @@ import Link from 'next/link'
 import { Timeline } from 'antd'
 import { useEffect, useState } from 'react'
 import { useContextProvider } from '@/src/Context/useContext'
-
+import { useTranslation } from 'react-i18next'
 export default function Projects() {
   const [showItems, setShowItems] = useState(false)
   const { setShowScroll } = useContextProvider()
+  const { t } = useTranslation()
   useEffect(() => {
     const handleScroll = async () => {
       const timeline = document.getElementById('section2')
@@ -58,7 +59,7 @@ export default function Projects() {
                 <div>
                   <h3>
                     <Link href="https://agendamentopmpa.com.br">
-                      sipmscheduling
+                      {t('projects-scheduling-label')}
                     </Link>
                   </h3>
                   <h4>01/07/2022 - 01/03/2023</h4>

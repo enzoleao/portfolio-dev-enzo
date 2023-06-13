@@ -1,5 +1,10 @@
 {
-    "home": "Home !!",
-    "about": "About !!",
-    "contact": "Contact !!!"
+    "apresentation": "Hi Im Enzo",
+    "profession": "A Web Developer",
+    "contact": "Contact !!!",
+    "header-about":"ABOUT",
+    "header-projects":"PROJECTS",
+    "header-technologies":"TECHNOLOGIES",
+    "header-contact": "CONTACT",
+    "projects-scheduling-label":"SIPM SCHEDULING"
   }

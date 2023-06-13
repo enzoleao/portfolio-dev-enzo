@@ -8,6 +8,7 @@ import { appWithTranslation } from 'next-i18next'
 import i18n from '../../i18n'
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
+
   const { lang } = router.query
   useEffect(() => {
     if (lang) {

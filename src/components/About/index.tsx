@@ -3,7 +3,7 @@ import Typed from 'react-typed'
 import { useEffect } from 'react'
 import { useContextProvider } from '@/src/Context/useContext'
 import { motion } from 'framer-motion'
-
+import { useTranslation } from 'react-i18next'
 const fadeIn = {
   initial: { opacity: 0 },
   animate: {
@@ -15,7 +15,7 @@ const fadeIn = {
 }
 export default function About() {
   const { setShowScroll } = useContextProvider()
-
+  const { t } = useTranslation()
   useEffect(() => {
     const handleScroll = async () => {
       const timeline = document.getElementById('section1')
@@ -38,14 +38,15 @@ export default function About() {
             <p>
               <Typed
                 showCursor={false}
-                strings={['Hi, Im Enzo']}
+                strings={[t('apresentation')]}
+                startDelay={60}
                 typeSpeed={40}
               />
             </p>
             <p className={styles.webDeveloper}>
               <Typed
                 showCursor={false}
-                strings={['a Developer Web']}
+                strings={[t('profession')]}
                 typeSpeed={40}
                 startDelay={1300}
               />
