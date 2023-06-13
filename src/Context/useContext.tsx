@@ -26,6 +26,7 @@ export function ContextProvider({ children }: any) {
     setShowContactModal(!showContactModal)
   }
   const closeContactModal = (data: any) => setShowContactModal(data)
+
   return (
     <Context.Provider
       value={{

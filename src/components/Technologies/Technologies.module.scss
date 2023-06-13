@@ -7,7 +7,6 @@
     span {
         width: 100%;
         display: flex;
-        padding: 20px; 
         margin-bottom: 150px;
         .technologiesIcons{
             height: 80px;
@@ -28,6 +27,7 @@
       align-items: center;
       max-width: 150px;
       width: 100%;
+      
         .technologiesIcons {
             object-fit: contain;
         }
@@ -35,15 +35,7 @@
         object-fit: contain;
       }
 
-      @media only screen and (max-width: 800px) {
-        max-width: 100px;
-        .imageSlide {
-          max-width: 35px;
-        }
-        img {
-          max-width: 50px;
-        }
-      }
+
     }
 }
 

@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
     height: 1000px;
+    
     .projectSections {
         width: 100%;
         max-width: 340px;
@@ -91,4 +91,16 @@
   
   .timelineItem {
     color:white;
+  }
+  .labelStyle, .labelStyleRight {
+    display: flex;
+    justify-content: flex-end;
+    
+    p {
+        text-align: justify;
+        max-width: 370px;
+    }
+  }
+  .labelStyleRight {
+    justify-content: flex-start;
   }

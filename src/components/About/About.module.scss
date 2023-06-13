@@ -18,7 +18,7 @@
 
             .namePortfolio {
                 display: flex;
-                gap: 6px;
+                gap: 10px;
                 font-weight: 600;
                 font-size: 44px;
                 bottom: 200px;
@@ -34,9 +34,10 @@
             .experiencesTextLeft {
                 font-size: 18px;
                 font-weight: 400;
-
+                margin-left: 40px;
                 @media (max-width:768px){
                     text-align: center;
+                    margin-left: 0;
                 }
             }
         }

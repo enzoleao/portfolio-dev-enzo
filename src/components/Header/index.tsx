@@ -1,4 +1,7 @@
 import styles from './Header.module.scss'
+import Image from 'next/image'
+import BrasilImg from '../../../public/images/brasil.svg'
+import UsaImg from '../../../public/images/bandeira-estados-unidos.svg'
 import { Link, animateScroll as scroll } from 'react-scroll'
 import { FaConnectdevelop } from 'react-icons/fa'
 import { useContextProvider } from '@/src/Context/useContext'
@@ -80,6 +83,22 @@ export default function Header() {
         </li>
         <li className={styles.li} onClick={showContactModalViewer}>
           CONTACT
+        </li>
+        <li className={styles.coutriesLi}>
+          <Image
+            onClick={() => console.log('brasil')}
+            width={15}
+            height={15}
+            alt="BRASIL"
+            src={BrasilImg}
+          />
+          <Image
+            onClick={() => console.log('USA')}
+            width={15}
+            height={15}
+            alt="USA"
+            src={UsaImg}
+          />
         </li>
       </ul>
     </div>
