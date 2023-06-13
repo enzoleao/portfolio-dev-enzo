@@ -2,6 +2,7 @@ import styles from './Sidebar.module.scss'
 import { AiOutlineClose } from 'react-icons/ai'
 import { useContextProvider } from '@/src/Context/useContext'
 import { Link } from 'react-scroll'
+import { useTranslation } from 'react-i18next'
 export default function Sidebar() {
   const {
     showSidebar,
@@ -10,7 +11,7 @@ export default function Sidebar() {
     showContactModalViewer,
     headerSelectedOptions,
   } = useContextProvider()
-
+  const { t } = useTranslation()
   return (
     <div
       className={
@@ -40,7 +41,7 @@ export default function Sidebar() {
             duration={500}
             onClick={() => setShowScroll('ABOUT')}
           >
-            ABOUT
+            {t('header.about')}
           </Link>
         </li>
         <li
@@ -60,7 +61,7 @@ export default function Sidebar() {
             offset={-70}
             duration={500}
           >
-            PROJECTS
+            {t('header.projects')}
           </Link>
         </li>
         <li
@@ -81,11 +82,11 @@ export default function Sidebar() {
             duration={500}
             height={100}
           >
-            TECHNOLOGIES
+            {t('header.technologies')}
           </Link>
         </li>
         <li className={styles.liDefault} onClick={showContactModalViewer}>
-          <a>CONTACT </a>
+          <a>{t('header.contact')}</a>
         </li>
       </ul>
       <div className={styles.iconSideBarFooter}>

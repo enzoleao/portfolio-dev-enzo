@@ -64,12 +64,7 @@ export default function Projects() {
                   </h3>
                   <h4>01/07/2022 - 01/03/2023</h4>
                   <span className={styles.labelStyle}>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industrys
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                    </p>
+                    <p>{t('projects.scheduling.about')}</p>
                   </span>
                 </div>
               ),
@@ -95,12 +90,7 @@ export default function Projects() {
                   </h3>
                   <h4>01/03/2023 - Now</h4>
                   <span className={styles.labelStyleRight}>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industrys
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                    </p>
+                    <p>{t('projects.medicalReportManagment.about')}</p>
                   </span>
                 </>
               ),

@@ -49,7 +49,7 @@ export default function About() {
                 showCursor={false}
                 strings={[t('about.profession')]}
                 typeSpeed={40}
-                startDelay={1300}
+                startDelay={1400}
               />
             </p>
           </span>

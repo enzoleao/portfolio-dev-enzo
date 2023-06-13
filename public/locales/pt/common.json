@@ -2,7 +2,7 @@
     "about": {
       "apresentation": "Olá, me chamo Enzo, sou",
       "profession": "Desenvolver Web",
-      "experience": ""
+      "experience": "Sou Desenvolvedor Full-Stack, com foco no Desenvolvimento de UI's utilizando Next.js e REST API's utilizando Express.js."
     },
     "header":{
       "about":"SOBRE",
@@ -13,11 +13,11 @@
     "projects": {
       "scheduling": {
         "name": "AGENDAMENTO SIPM",
-        "about":""
+        "about":"Neste projeto de AGENDAMENTO realizei a criação de UI's utilizando React.js e integrações via REST API's utilizando Express e para o armazenamento das informações utilizei MySQL"
       },
       "medicalReportManagment": {
         "name":"GESTÃO DE PRONTUÁRIO - CIAP",
-        "about":""
+        "about":"Projeto de Gestão de Prontuários, venho desenvolvendo UI's seguindo padrões criados por Design utilizando Next.js, neste projeto possuimos o objetivo do abandono de papeis para a gestão de prontuários de psicologos do Centro de Atenção Psicossocial da PMPA"
       }
     }
   }

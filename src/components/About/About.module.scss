@@ -14,7 +14,6 @@
         div {
             display: flex;
             flex-direction: column;
-            gap: 5px;
 
             .namePortfolio {
                 display: flex;
@@ -39,6 +38,9 @@
                     text-align: center;
                     margin-left: 0;
                 }
+            }
+            @media(max-width: 768px) {
+                gap: 10px;
             }
         }
         @media (max-width:768px){
