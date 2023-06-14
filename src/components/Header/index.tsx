@@ -110,6 +110,22 @@ export default function Header() {
           />
         </li>
       </ul>
+      <div className={styles.countryIcons}>
+        <Image
+          onClick={() => handleChangeLanguage('pt')}
+          width={25}
+          height={25}
+          alt="BRASIL"
+          src={BrasilImg}
+        />
+        <Image
+          onClick={() => handleChangeLanguage('en')}
+          width={25}
+          height={25}
+          alt="USA"
+          src={UsaImg}
+        />
+      </div>
     </div>
   )
 }

@@ -12,14 +12,14 @@
         position: fixed;
         bottom: 0;
         color: #FFF;
-        width: 100%;
-        z-index: 2;
-        height: 60px;    
+        width: 100vh;
+        height: 100px;    
         background-color: #0A192F;
         display: flex;
         justify-content: space-around;
         height: 100px;
         align-items: center;
+        z-index: 2;
     }
 }
 .footerIcons {
