@@ -22,6 +22,8 @@ export default function About() {
       const rect = timeline?.getBoundingClientRect()
       /* @ts-ignore: Unreachable code error */
       const isVisible = rect.top < window.innerHeight && rect.bottom >= 0
+
+      console.log(isVisible)
       // eslint-disable-next-line no-unused-expressions
       isVisible === true ? setShowScroll('ABOUT') : false
     }
