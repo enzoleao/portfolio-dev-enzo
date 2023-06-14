@@ -20,12 +20,11 @@ export default function Home() {
         <Projects />
         <Technologies />
       </div>
-      <ContatModal />
       <footer>
         <div>
           <p>&copy; 2023. Todos os direitos reservados.</p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex items-center  justify-center ">
           <a href="https://github.com/enzoleao">
             <AiOutlineGithub className={styles.footerIcons} />
           </a>
@@ -37,6 +36,7 @@ export default function Home() {
           </a>
         </div>
       </footer>
+      <ContatModal />
     </div>
   )
 }
