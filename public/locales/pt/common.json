@@ -17,7 +17,7 @@
       },
       "medicalReportManagment": {
         "name":"GESTÃO DE PRONTUÁRIO - CIAP",
-        "about":"Projeto de Gestão de Prontuários, venho desenvolvendo UI's seguindo padrões criados por Design utilizando Next.js, neste projeto possuimos o objetivo do abandono de papeis para a gestão de prontuários de psicologos do Centro de Atenção Psicossocial da PMPA"
+        "about":"Projeto de Gestão de Prontuários, venho desenvolvendo UI's seguindo padrões criados por Design utilizando Next.js, neste projeto possuimos o objetivo do abandono de papeis para a gestão de prontuários psicologicos do Centro de Atenção Psicossocial da PMPA"
       }
     }
   }

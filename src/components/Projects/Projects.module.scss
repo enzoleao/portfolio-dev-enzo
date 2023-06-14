@@ -104,4 +104,12 @@
   .labelStyleRight {
     justify-content: flex-start;
   }
-  
+  .cardProjects {
+    max-width: 1220px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .imageCard {
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+ }

@@ -13,11 +13,11 @@
     "projects": {
         "scheduling": {
           "name": "SIPM SCHEDULING",
-          "about":""
+          "about":"In this SCHEDULE project I created UI's using React.js and integrations via REST API's using Express and for storing information I used MySQL"
         },
         "medicalReportManagment": {
           "name":"MEDICAL REPORT MANAGEMENT - CIAP",
-          "about":""
+          "about":"Medical Records Management Project, I have been developing UI's following patterns created by Design using Next.js, in this project we have the objective of abandoning roles for the management of psychological medical records of the Psychosocial Care Center of PMPA"
         }
     }
   }
