@@ -7,6 +7,11 @@ import { ContextProvider } from '../Context/useContext'
 import { appWithTranslation } from 'next-i18next'
 import i18n from '../../i18n'
 import Head from 'next/head'
+import 'primereact/resources/themes/lara-light-indigo/theme.css' // theme
+import 'primereact/resources/primereact.css' // core css
+import 'primeicons/primeicons.css' // icons
+import 'primeflex/primeflex.css'
+import './flags.css'
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
@@ -22,6 +27,7 @@ function App({ Component, pageProps }: AppProps) {
         <title>Developer</title>
         <link rel="icon" href="/images/favicon.png" />
       </Head>
+
       <Component {...pageProps} />
     </ContextProvider>
   )

@@ -46,7 +46,7 @@ export default function Projects() {
               color: 'none',
               children: (
                 <>
-                  <div className="flex w-full">
+                  <div className="flex w-full ">
                     <Image
                       src={AgendamentoImage}
                       alt="teste"
@@ -56,7 +56,7 @@ export default function Projects() {
                 </>
               ),
               label: (
-                <div>
+                <div className={styles.testeste}>
                   <h3>
                     <Link href="https://agendamentopmpa.com.br">
                       {t('projects.scheduling.name')}

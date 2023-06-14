@@ -1,5 +1,4 @@
 import styles from './About.module.scss'
-import Typed from 'react-typed'
 import { useEffect } from 'react'
 import { useContextProvider } from '@/src/Context/useContext'
 import { motion } from 'framer-motion'
@@ -36,31 +35,10 @@ export default function About() {
       <div id="about">
         <div>
           <span className={styles.namePortfolio}>
-            <p>
-              <Typed
-                showCursor={false}
-                strings={[t('about.apresentation')]}
-                startDelay={60}
-                typeSpeed={40}
-              />
-            </p>
-            <p className={styles.webDeveloper}>
-              <Typed
-                showCursor={false}
-                strings={[t('about.profession')]}
-                typeSpeed={40}
-                startDelay={1400}
-              />
-            </p>
+            <p>{t('about.apresentation')}</p>
+            <p className={styles.webDeveloper}>{t('about.profession')}</p>
           </span>
-          <p className={styles.experiencesTextLeft}>
-            <Typed
-              strings={[t('about.experience')]}
-              startDelay={2500}
-              showCursor={false}
-              typeSpeed={40}
-            />
-          </p>
+          <p className={styles.experiencesTextLeft}>{t('about.experience')}</p>
         </div>
       </div>
       <div>
