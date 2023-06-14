@@ -17,9 +17,13 @@
         background-color: #0A192F;
         display: flex;
         justify-content: space-around;
-        height: 100px;
+        height: 60px;
         align-items: center;
         z-index: 2;
+
+        @media (max-width: 768px) {
+            height: 100px;
+        }
     }
 }
 .footerIcons {

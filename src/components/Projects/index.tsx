@@ -16,20 +16,20 @@ export default function Projects() {
     {
       status: t('projects.scheduling.name'),
       date: '01/07/2022 - 01/03/2023',
-      color: '#fff',
       image: sipmImage,
       about: t('projects.scheduling.about'),
       link: 'https://agendamentopmpa.com.br/',
-      icon: '',
+      icon: 'pi pi-check',
+      color: '#607D8B',
     },
     {
       status: t('projects.medicalReportManagment.name'),
       date: '01/03/2023 - Now',
-      color: '#fff',
       image: ciapImage,
       about: t('projects.medicalReportManagment.about'),
       link: 'https://ciap-front-end-project.vercel.app/',
-      icon: '',
+      icon: 'pi pi-spin pi-spinner',
+      color: '#607D8B',
     },
   ]
   t('')
