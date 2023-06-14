@@ -1,16 +1,19 @@
 import styles from './Projects.module.scss'
-import React, { useEffect, useState } from 'react'
+import sipmImage from '../../../public/images/agendamento_pmpa.png'
+import ciapImage from '../../../public/images/ciap_pmpa.png'
+import { useEffect, useState, useRef } from 'react'
 import { useContextProvider } from '@/src/Context/useContext'
 import { useTranslation } from 'react-i18next'
 import { Timeline } from 'primereact/timeline'
 import { Card } from 'primereact/card'
-import sipmImage from '../../../public/images/agendamento_pmpa.png'
-import ciapImage from '../../../public/images/ciap_pmpa.png'
+import { Button } from 'primereact/button'
+import { OverlayPanel } from 'primereact/overlaypanel'
 
 import Image from 'next/image'
 export default function Projects() {
   const [showItems, setShowItems] = useState(false)
   const { setShowScroll } = useContextProvider()
+
   const { t } = useTranslation()
   const events = [
     {
@@ -32,7 +35,6 @@ export default function Projects() {
       color: '#607D8B',
     },
   ]
-  t('')
   const customizedMarker = (item: any) => {
     return (
       <span
@@ -45,6 +47,7 @@ export default function Projects() {
   }
 
   const customizedContent = (item: any) => {
+    const op = useRef(null)
     return (
       <Card
         className={styles.cardProjects}
@@ -64,6 +67,15 @@ export default function Projects() {
           />
         )}
         <p className="text-justify">{item.about}</p>
+        <Button label="Read more" className="p-button-text"></Button>
+        <OverlayPanel ref={op}>
+          <img
+            src={
+              'https://primefaces.org/cdn/primereact/images/product/bamboo-watch.jpg'
+            }
+            alt="Bamboo Watch"
+          ></img>
+        </OverlayPanel>
       </Card>
     )
   }
