@@ -20,6 +20,7 @@ export default function Projects() {
       image: sipmImage,
       about: t('projects.scheduling.about'),
       link: 'https://agendamentopmpa.com.br/',
+      icon: '',
     },
     {
       status: t('projects.medicalReportManagment.name'),
@@ -28,6 +29,7 @@ export default function Projects() {
       image: ciapImage,
       about: t('projects.medicalReportManagment.about'),
       link: 'https://ciap-front-end-project.vercel.app/',
+      icon: '',
     },
   ]
   t('')

@@ -9,5 +9,17 @@
         flex-direction: column;
     }
 
-
+    footer {
+        width: 100%;
+        background-color: #0A192F;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        height: 50px;
+        align-items: center;
+    }
+}
+.footerIcons {
+    width: 30px;
+    height: 30px;
 }
