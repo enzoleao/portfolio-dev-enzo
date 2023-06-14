@@ -83,7 +83,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap:1px;
     @media (min-width: 768px) {
         display: none;
     }
