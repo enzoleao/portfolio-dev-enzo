@@ -22,5 +22,9 @@
     },
     "footer": {
       "linkcur":"https://drive.google.com/file/d/1W-C73hWfBf3n9xT-AzoA8ecXKyHIAowQ/view?usp=drivesdk"
+    },
+    "contactModal":{
+      "contact":"Contato",
+      "message":"Mensagem"
     }
   }

@@ -71,6 +71,9 @@
             height: 150px;
         }
     }
+    @media(min-height: 840px) {
+        height: 1200px;
+    }
 }
 
 .timeline {
