@@ -24,6 +24,7 @@ export default function Projects() {
       link: 'https://agendamentopmpa.com.br/',
       icon: 'pi pi-check',
       color: '#607D8B',
+      name: 'teste',
     },
     {
       status: t('projects.medicalReportManagment.name'),
@@ -33,6 +34,7 @@ export default function Projects() {
       link: 'https://ciap-front-end-project.vercel.app/',
       icon: 'pi pi-spin pi-spinner',
       color: '#607D8B',
+      name: 'teste',
     },
   ]
   const customizedMarker = (item: any) => {
