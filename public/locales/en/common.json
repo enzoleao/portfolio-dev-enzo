@@ -19,5 +19,8 @@
           "name":"MEDICAL REPORT MANAGEMENT - CIAP",
           "about":"Medical Records Management Project, I have been developing UI's following patterns created by Design using Next.js, in this project we have the objective of abandoning roles for the management of psychological medical records of the Psychosocial Care Center of PMPA"
         }
+    },
+    "footer": {
+      "linkcur":"https://drive.google.com/file/d/1jlDGgB6c6mElKkfioMGU_HNxNu3LcJIV/view"
     }
   }

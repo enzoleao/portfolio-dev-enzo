@@ -65,7 +65,10 @@ export default function Projects() {
         )}
         <p className="text-justify">{item.about}</p>
         <a href={item.link}>
-          <Button label="Visitar" className="p-button-text"></Button>
+          <Button
+            label="Visitar"
+            className="p-button-text text-blue-700"
+          ></Button>
         </a>
       </Card>
     )
