@@ -23,7 +23,7 @@ export default function Projects() {
       about: t('projects.scheduling.about'),
       link: 'https://agendamentopmpa.com.br/',
       icon: 'pi pi-check',
-      color: '#607D8B',
+      color: '#4BB543',
       name: 'teste',
     },
     {
