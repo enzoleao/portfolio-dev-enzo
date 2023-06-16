@@ -1,13 +1,13 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+
 import styles from './Projects.module.scss'
-import sipmImage from '../../../public/images/agendamento_pmpa.png'
-import ciapImage from '../../../public/images/ciap_pmpa.png'
-import { useEffect, useState, useRef } from 'react'
+
+import { useEffect, useState } from 'react'
 import { useContextProvider } from '@/src/Context/useContext'
 import { useTranslation } from 'react-i18next'
 import { Timeline } from 'primereact/timeline'
 import { Card } from 'primereact/card'
 import { Button } from 'primereact/button'
-import { OverlayPanel } from 'primereact/overlaypanel'
 import { Image } from 'antd'
 
 export default function Projects() {
@@ -24,6 +24,7 @@ export default function Projects() {
       link: 'https://agendamentopmpa.com.br/',
       icon: 'pi pi-check',
       color: '#607D8B',
+      name: 'teste',
     },
     {
       status: t('projects.medicalReportManagment.name'),
@@ -33,6 +34,7 @@ export default function Projects() {
       link: 'https://ciap-front-end-project.vercel.app/',
       icon: 'pi pi-spin pi-spinner',
       color: '#607D8B',
+      name: 'teste',
     },
   ]
   const customizedMarker = (item: any) => {
@@ -47,15 +49,10 @@ export default function Projects() {
   }
 
   const customizedContent = (item: any) => {
-    const op = useRef(null)
     return (
       <Card
         className={styles.cardProjects}
-        title={
-          <a className="hover:text-blue-600" href={item.link}>
-            {item.status}
-          </a>
-        }
+        title={item.status}
         subTitle={item.date}
       >
         {item.image && (
@@ -67,15 +64,12 @@ export default function Projects() {
           />
         )}
         <p className="text-justify">{item.about}</p>
-        <Button label="Read more" className="p-button-text"></Button>
-        <OverlayPanel ref={op}>
-          <img
-            src={
-              'https://primefaces.org/cdn/primereact/images/product/bamboo-watch.jpg'
-            }
-            alt="Bamboo Watch"
-          ></img>
-        </OverlayPanel>
+        <a href={item.link}>
+          <Button
+            label="Visitar"
+            className="p-button-text text-blue-700"
+          ></Button>
+        </a>
       </Card>
     )
   }
@@ -90,7 +84,6 @@ export default function Projects() {
       // eslint-disable-next-line no-unused-expressions
       isVisible === true ? setShowScroll('PROJECTS') : false
     }
-
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [setShowScroll])

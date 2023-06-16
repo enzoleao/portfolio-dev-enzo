@@ -7,8 +7,10 @@ import { useRef, useState } from 'react'
 import CircularProgress from '@mui/material/CircularProgress'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
+import { useTranslation } from 'react-i18next'
 export default function ContatModal() {
   const { showContactModal, closeContactModal } = useContextProvider()
+  const { t } = useTranslation()
   const [loading, setLoading] = useState('default')
   const form = useRef<HTMLFormElement | any>()
   const sendEmail = (e: any) => {
@@ -52,7 +54,7 @@ export default function ContatModal() {
       >
         <header>
           <HiOutlinePaperAirplane className={styles.airPlaneContactUs} />
-          <p>Contact</p>
+          <p>{t('contactModal.contact')}</p>
           <AiOutlineClose
             onClick={() => closeContactModal(false)}
             color="#0A192F"
@@ -70,7 +72,7 @@ export default function ContatModal() {
             <input id="email" required type="email" name="user_email" />
           </div>
           <div>
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">{t('contactModal.message')}</label>
             <textarea id="message" name="message" required></textarea>
           </div>
           <footer>

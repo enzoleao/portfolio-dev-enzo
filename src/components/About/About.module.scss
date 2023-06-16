@@ -14,12 +14,12 @@
         div {
             display: flex;
             flex-direction: column;
-
+            gap: 10px;
             .namePortfolio {
                 display: flex;
                 gap: 10px;
                 font-weight: 600;
-                font-size: 44px;
+                font-size: 38px;
                 bottom: 200px;
                 right: 300px;
                 text-align: center;
@@ -57,5 +57,8 @@
     @media(max-width: 768px) {
         flex-direction: column;
         justify-content: space-evenly;
+    }
+    @media(min-height: 840px) {
+        height: 1200px;
     }
 }
