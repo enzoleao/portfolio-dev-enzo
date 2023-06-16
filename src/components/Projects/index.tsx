@@ -8,8 +8,8 @@ import { Timeline } from 'primereact/timeline'
 import { Card } from 'primereact/card'
 import { Button } from 'primereact/button'
 import { OverlayPanel } from 'primereact/overlaypanel'
+import { Image } from 'antd'
 
-import Image from 'next/image'
 export default function Projects() {
   const [showItems, setShowItems] = useState(false)
   const { setShowScroll } = useContextProvider()
@@ -19,7 +19,7 @@ export default function Projects() {
     {
       status: t('projects.scheduling.name'),
       date: '01/07/2022 - 01/03/2023',
-      image: sipmImage,
+      image: 'https://i.imgur.com/0SVFwPr.png',
       about: t('projects.scheduling.about'),
       link: 'https://agendamentopmpa.com.br/',
       icon: 'pi pi-check',
@@ -28,7 +28,7 @@ export default function Projects() {
     {
       status: t('projects.medicalReportManagment.name'),
       date: '01/03/2023 - Now',
-      image: ciapImage,
+      image: 'https://i.imgur.com/d7T5deL.png',
       about: t('projects.medicalReportManagment.about'),
       link: 'https://ciap-front-end-project.vercel.app/',
       icon: 'pi pi-spin pi-spinner',
