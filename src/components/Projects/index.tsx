@@ -52,8 +52,8 @@ export default function Projects() {
     return (
       <Card
         className={styles.cardProjects}
-        title={item.status}
-        subTitle={item.date}
+        title={<p className="text-blue-900">{item.status}</p>}
+        subTitle={<p className="text-blue-900">{item.date}</p>}
       >
         {item.image && (
           <Image

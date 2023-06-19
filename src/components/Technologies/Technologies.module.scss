@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(to top, #0b2949, #255577);
+    flex-direction: column;
     span {
         width: 100%;
         display: flex;
@@ -23,6 +24,8 @@
 
     .swiperSlide {
       display: flex;
+      flex-direction: column;
+      gap: 15px;
       padding: 0 1rem;
       align-items: center;
       max-width: 150px;

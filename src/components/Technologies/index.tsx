@@ -20,6 +20,7 @@ import 'swiper/css'
 import 'swiper/scss/autoplay'
 import { useEffect } from 'react'
 import { useContextProvider } from '@/src/Context/useContext'
+import { Progress } from 'antd'
 
 export default function Technologies() {
   const { setShowScroll } = useContextProvider()
@@ -37,6 +38,73 @@ export default function Technologies() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [setShowScroll])
+  const technologies = [
+    {
+      id: 1,
+      icon: <SiReact className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 2,
+      icon: <SiNextdotjs className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 3,
+      icon: <SiTypescript className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 4,
+      icon: <SiSass className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 5,
+      icon: <SiTailwindcss className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 6,
+      icon: <SiNodedotjs className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 7,
+      icon: <SiExpress className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 8,
+      icon: <SiLaravel className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 9,
+      icon: <SiMysql className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 10,
+      icon: <SiPostgresql className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 11,
+      icon: <SiPrisma className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 12,
+      icon: <SiSequelize className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+    {
+      id: 13,
+      icon: <SiGit className={styles.technologiesIcons} />,
+      progress: <Progress percent={80} showInfo={false} steps={5} />,
+    },
+  ]
   return (
     <div id="section3" className={styles.technologiesContainer}>
       <span>
@@ -68,45 +136,18 @@ export default function Technologies() {
           className={styles.swiperWrapper}
         >
           <div></div>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiReact className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiNextdotjs className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiTypescript className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiSass className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiTailwindcss className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiNodedotjs className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiExpress className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiLaravel className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiMysql className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiPostgresql className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiPrisma className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiSequelize className={styles.technologiesIcons} />
-          </SwiperSlide>
-          <SwiperSlide className={styles.swiperSlide}>
-            <SiGit className={styles.technologiesIcons} />
-          </SwiperSlide>
+          {technologies.map((i) => {
+            return (
+              <SwiperSlide key={i.id} className={styles.swiperSlide}>
+                {
+                  <>
+                    {i.icon}
+                    {i.progress}
+                  </>
+                }
+              </SwiperSlide>
+            )
+          })}
         </Swiper>
       </span>
     </div>
