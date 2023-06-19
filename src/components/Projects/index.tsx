@@ -67,7 +67,7 @@ export default function Projects() {
         <a href={item.link}>
           <Button
             label="Visitar"
-            className="p-button-text text-blue-700"
+            className="p-button-text text-blue-900"
           ></Button>
         </a>
       </Card>
