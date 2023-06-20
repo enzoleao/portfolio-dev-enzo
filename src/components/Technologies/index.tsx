@@ -105,7 +105,16 @@ export default function Technologies() {
       progress: <Progress percent={80} showInfo={false} steps={5} />,
     },
   ]
-  const frontEndSkills = []
+  const skills = [
+    {
+      name: 'Front-End',
+      techs: {},
+    },
+    {
+      name: 'Back-End',
+      techs: {},
+    },
+  ]
   return (
     <div id="section3" className={styles.technologiesContainer}>
       <div className={styles.cardEdit}>
