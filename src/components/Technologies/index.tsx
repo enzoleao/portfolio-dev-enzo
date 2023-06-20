@@ -111,40 +111,10 @@ export default function Technologies() {
       <div className={styles.cardEdit}>
         <div>
           <p>Front-End</p>
-          <Card
-            className={styles.card}
-            title="React.js"
-            bordered={false}
-            style={{ width: 300 }}
-            bodyStyle={{
-              padding: 0,
-            }}
-          >
+          <Card bordered={false} style={{ width: 300 }}>
+            <p>• Card content</p>
             <p>Card content</p>
             <p>Card content</p>
-            <p>Card content</p>
-          </Card>
-          <Card
-            className={styles.card}
-            bodyStyle={{
-              padding: 0,
-            }}
-            title="Card title"
-            bordered={false}
-            style={{ width: 300 }}
-          >
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-          </Card>
-          <Card
-            bodyStyle={{
-              padding: 0,
-            }}
-            title="Card title"
-            bordered={false}
-            style={{ width: 300 }}
-          >
             <p>Card content</p>
             <p>Card content</p>
             <p>Card content</p>
@@ -152,39 +122,10 @@ export default function Technologies() {
         </div>
         <div>
           <p>Back-End</p>
-          <Card
-            className={styles.card}
-            title="Back-End"
-            bordered={false}
-            style={{ width: 300 }}
-            bodyStyle={{
-              padding: 0,
-            }}
-          >
+          <Card bordered={false} style={{ width: 300 }}>
             <p>Card content</p>
             <p>Card content</p>
             <p>Card content</p>
-          </Card>
-          <Card
-            bodyStyle={{
-              padding: 0,
-            }}
-            title="Card title"
-            bordered={false}
-            style={{ width: 300 }}
-          >
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-          </Card>
-          <Card
-            bodyStyle={{
-              padding: 0,
-            }}
-            title="Card title"
-            bordered={false}
-            style={{ width: 300 }}
-          >
             <p>Card content</p>
             <p>Card content</p>
             <p>Card content</p>
