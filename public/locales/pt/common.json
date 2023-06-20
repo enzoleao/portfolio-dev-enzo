@@ -1,14 +1,14 @@
 {
     "about": {
-      "apresentation": "Olá, me chamo Enzo, sou",
+      "apresentation": "Enzo Leão",
       "profession": "Desenvolver Web",
-      "experience": "Sou Desenvolvedor Full-Stack, com foco no Desenvolvimento de UI's utilizando Next.js e REST API's utilizando Express.js."
+      "experience": "Sou Desenvolvedor Full-Stack Jr, com foco no Desenvolvimento de UI's utilizando Next.js e REST API's utilizando Express.js, atualmente estou cursando graduação em Analise e Desenvolvimento de Sistemas."
     },
     "header":{
-      "about":"SOBRE",
-      "projects":"PROJETOS",
-      "technologies":"TECNOLÓGIAS",
-      "contact":"CONTATO"
+      "about":"Sobre",
+      "projects":"Experiências",
+      "technologies":"Tecnologias",
+      "contact":"Contato"
     },
     "projects": {
       "scheduling": {

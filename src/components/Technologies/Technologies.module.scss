@@ -5,13 +5,28 @@
     align-items: center;
     background: linear-gradient(to top, #0b2949, #255577);
     flex-direction: column;
+    gap: 30px;
+
+    .cardEdit {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 20px;
+      
+      div {
+        height: max-content;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+     
+    }
     span {
         width: 100%;
         display: flex;
-        margin-bottom: 150px;
+
         .technologiesIcons{
-            height: 80px;
-            width: 80px;
+            height: 26px;
+            width: 26px;
             color:#fff;
         } 
        
@@ -30,19 +45,12 @@
       align-items: center;
       max-width: 150px;
       width: 100%;
-      
-        .technologiesIcons {
-            object-fit: contain;
-        }
-      .imageSlide {
-        object-fit: contain;
-      }
-
-
     }
 }
 
   
 
   
-  
+  .card {
+    background: none;
+  }

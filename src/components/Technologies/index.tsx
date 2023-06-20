@@ -20,7 +20,7 @@ import 'swiper/css'
 import 'swiper/scss/autoplay'
 import { useEffect } from 'react'
 import { useContextProvider } from '@/src/Context/useContext'
-import { Progress } from 'antd'
+import { Card, Progress } from 'antd'
 
 export default function Technologies() {
   const { setShowScroll } = useContextProvider()
@@ -105,8 +105,92 @@ export default function Technologies() {
       progress: <Progress percent={80} showInfo={false} steps={5} />,
     },
   ]
+  const frontEndSkills = []
   return (
     <div id="section3" className={styles.technologiesContainer}>
+      <div className={styles.cardEdit}>
+        <div>
+          <p>Front-End</p>
+          <Card
+            className={styles.card}
+            title="React.js"
+            bordered={false}
+            style={{ width: 300 }}
+            bodyStyle={{
+              padding: 0,
+            }}
+          >
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+          <Card
+            className={styles.card}
+            bodyStyle={{
+              padding: 0,
+            }}
+            title="Card title"
+            bordered={false}
+            style={{ width: 300 }}
+          >
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+          <Card
+            bodyStyle={{
+              padding: 0,
+            }}
+            title="Card title"
+            bordered={false}
+            style={{ width: 300 }}
+          >
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+        </div>
+        <div>
+          <p>Back-End</p>
+          <Card
+            className={styles.card}
+            title="Back-End"
+            bordered={false}
+            style={{ width: 300 }}
+            bodyStyle={{
+              padding: 0,
+            }}
+          >
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+          <Card
+            bodyStyle={{
+              padding: 0,
+            }}
+            title="Card title"
+            bordered={false}
+            style={{ width: 300 }}
+          >
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+          <Card
+            bodyStyle={{
+              padding: 0,
+            }}
+            title="Card title"
+            bordered={false}
+            style={{ width: 300 }}
+          >
+            <p>Card content</p>
+            <p>Card content</p>
+            <p>Card content</p>
+          </Card>
+        </div>
+      </div>
       <span>
         <Swiper
           breakpoints={{

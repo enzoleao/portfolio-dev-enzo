@@ -14,26 +14,34 @@
         div {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 30px;
+            .spanProfessionWithHr {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                hr {
+                    width: 30px;
+                }
+            }
             .namePortfolio {
                 display: flex;
-                gap: 10px;
-                font-weight: 600;
+                font-weight: 500;
+                flex-direction: column;
                 font-size: 38px;
                 bottom: 200px;
                 right: 300px;
-                text-align: center;
                 @media (max-width:768px){
                     flex-direction: column;
                 }
                 .webDeveloper{
+                    font-weight: 600;
                     color: #98c3ed;
                 }
             }
             .experiencesTextLeft {
                 font-size: 18px;
                 font-weight: 400;
-                margin-left: 40px;
+                margin-left: 282px;
                 @media (max-width:768px){
                     text-align: center;
                     margin-left: 0;
@@ -50,7 +58,25 @@
     .meImage {
         border-radius: 0px 0px 150px 150px;
         transition: transform 0.3s ease;
+        animation: borderMovement 5s infinite linear;
     }
+    @keyframes borderMovement {
+        0% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(2px, 0);
+        }
+        50% {
+          transform: translate(2px, 2px);
+        }
+        75% {
+          transform: translate(0, 2px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
     .meImage:hover {
         transform: scale(1.01);
       }

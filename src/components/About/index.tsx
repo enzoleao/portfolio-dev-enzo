@@ -16,6 +16,7 @@ const fadeIn = {
 export default function About() {
   const { setShowScroll } = useContextProvider()
   const { t } = useTranslation()
+
   useEffect(() => {
     const handleScroll = async () => {
       const timeline = document.getElementById('section1')
@@ -36,7 +37,10 @@ export default function About() {
         <div>
           <span className={styles.namePortfolio}>
             <p>{t('about.apresentation')}</p>
-            <p className={styles.webDeveloper}>{t('about.profession')}</p>
+            <span className={styles.spanProfessionWithHr}>
+              <hr />
+              <p className={styles.webDeveloper}>{t('about.profession')}</p>
+            </span>
           </span>
           <p className={styles.experiencesTextLeft}>{t('about.experience')}</p>
         </div>
