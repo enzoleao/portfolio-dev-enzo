@@ -8,13 +8,13 @@
     div {
         display: flex;
         justify-content: space-around;
-        align-items: center;
         width: 100%;
-        
         div {
             display: flex;
             flex-direction: column;
             gap: 30px;
+            
+            padding-left: 120px;
             .spanProfessionWithHr {
                 display: flex;
                 align-items: center;
@@ -39,16 +39,21 @@
                 }
             }
             .experiencesTextLeft {
+                display: flex;
                 font-size: 18px;
                 font-weight: 400;
-                margin-left: 282px;
+                max-width: 700px;
+                text-justify: center;
                 @media (max-width:768px){
                     text-align: center;
                     margin-left: 0;
+                    
                 }
             }
             @media(max-width: 768px) {
                 gap: 10px;
+                padding-left: 0px;
+                align-items: center;
             }
         }
         @media (max-width:768px){

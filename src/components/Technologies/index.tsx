@@ -105,41 +105,35 @@ export default function Technologies() {
       progress: <Progress percent={80} showInfo={false} steps={5} />,
     },
   ]
-  const skills = [
+  const stacks = [
     {
       name: 'Front-End',
-      techs: {},
+      techs: ['Next.js', 'React.js', 'Tailwind', 'Sass', 'UI Libraries'],
     },
     {
       name: 'Back-End',
-      techs: {},
+      techs: ['Node.js', 'Express.js', 'Laravel', 'Prisma', 'MySQL'],
     },
   ]
   return (
     <div id="section3" className={styles.technologiesContainer}>
       <div className={styles.cardEdit}>
-        <div>
-          <p>Front-End</p>
-          <Card bordered={false} style={{ width: 300 }}>
-            <p>• Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-          </Card>
-        </div>
-        <div>
-          <p>Back-End</p>
-          <Card bordered={false} style={{ width: 300 }}>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-          </Card>
-        </div>
+        {stacks.map((i) => {
+          return (
+            <div key={i.name}>
+              <p className={styles.techsHeader}>{i.name}</p>
+              <Card bordered={false} style={{ width: 300 }}>
+                {i.techs.map((i) => {
+                  return (
+                    <p className={styles.techsStyle} key={i}>
+                      • {i}
+                    </p>
+                  )
+                })}
+              </Card>
+            </div>
+          )
+        })}
       </div>
       <span>
         <Swiper

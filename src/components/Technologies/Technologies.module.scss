@@ -1,11 +1,11 @@
 .technologiesContainer {
-    min-height: 1000px;
+    min-height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to top, #0b2949, #255577);
     flex-direction: column;
-    gap: 30px;
+    gap: 34px;
 
     .cardEdit {
       display: flex;
@@ -13,12 +13,24 @@
       justify-content: center;
       gap: 20px;
       
+      .techsHeader {
+        position: relative;
+        text-align: center;
+        bottom: 30px;
+        color: #fff;
+        font-size: 22px;
+        
+      }
       div {
         height: max-content;
         background-color: #fff;
         border-radius: 10px;
+        min-height: 270px;
       }
-     
+      @media (max-width: 658px){
+        flex-direction: column;
+        max-width: 600px;
+      }
     }
     span {
         width: 100%;
@@ -53,4 +65,9 @@
   
   .card {
     background: none;
+  }
+  .techsStyle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 44px;
   }
