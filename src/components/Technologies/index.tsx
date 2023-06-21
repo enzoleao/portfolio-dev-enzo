@@ -18,19 +18,21 @@ import { Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/scss/autoplay'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useContextProvider } from '@/src/Context/useContext'
 import { Card, Progress } from 'antd'
 
 export default function Technologies() {
   const { setShowScroll } = useContextProvider()
+  const [showItems, setShowItems] = useState(false)
   useEffect(() => {
     const handleScroll = async () => {
       const timeline = document.getElementById('section3')
       const rect = timeline?.getBoundingClientRect()
+
       /* @ts-ignore: Unreachable code error */
       const isVisible = rect.top < window.innerHeight && rect.bottom >= 0
-
+      setShowItems(isVisible)
       // eslint-disable-next-line no-unused-expressions
       isVisible === true ? setShowScroll('TECHNOLOGIES') : false
     }
@@ -120,7 +122,10 @@ export default function Technologies() {
       <div className={styles.cardEdit}>
         {stacks.map((i) => {
           return (
-            <div key={i.name}>
+            <div
+              className={`${styles.timeline} ${showItems && styles.show}`}
+              key={i.name}
+            >
               <p className={styles.techsHeader}>{i.name}</p>
               <Card bordered={false} style={{ width: 300 }}>
                 {i.techs.map((i) => {
