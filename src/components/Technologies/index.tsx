@@ -120,10 +120,12 @@ export default function Technologies() {
   return (
     <div id="section3" className={styles.technologiesContainer}>
       <div className={styles.cardEdit}>
-        {stacks.map((i) => {
+        {stacks.map((i, index) => {
           return (
             <div
-              className={`${styles.timeline} ${showItems && styles.show}`}
+              className={`${
+                index % 2 === 0 ? styles.timeline : styles.timeline2
+              } ${showItems && styles.show}`}
               key={i.name}
             >
               <p className={styles.techsHeader}>{i.name}</p>

@@ -17,6 +17,7 @@ export default function Projects() {
   const { t } = useTranslation()
   const events = [
     {
+      id: 1,
       status: t('projects.scheduling.name'),
       date: '01/07/2022 - 01/03/2023',
       image: 'https://i.imgur.com/0SVFwPr.png',
@@ -27,6 +28,7 @@ export default function Projects() {
       name: 'teste',
     },
     {
+      id: 2,
       status: t('projects.medicalReportManagment.name'),
       date: '01/03/2023 - Now',
       image: 'https://i.imgur.com/d7T5deL.png',
@@ -51,7 +53,9 @@ export default function Projects() {
   const customizedContent = (item: any) => {
     return (
       <Card
-        className={styles.cardProjects}
+        className={`${item.id % 2 === 0 ? styles.timeline : styles.timeline2} ${
+          showItems && styles.show
+        }`}
         title={<p className="text-blue-900">{item.status}</p>}
         subTitle={<p className="text-blue-900">{item.date}</p>}
       >
@@ -89,10 +93,7 @@ export default function Projects() {
   }, [setShowScroll])
   return (
     <div className={styles.projectsContainer} id="section2">
-      <div
-        id="section2"
-        className={`${styles.timeline} ${showItems && styles.show}`}
-      >
+      <div id="section2">
         <div className="card">
           <Timeline
             value={events}
